@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scortchiloe | Panel de Navegación</title>
+    <style>
+        /* Variables de color */
+        :root {
+            --negro-fondo: #121212;
+            --negro-tarjeta: #1e1e1e;
+            --rosado-principal: #ff2d75;
+            --rosado-brillo: #ff5e95;
+            --texto-blanco: #f5f5f5;
+        }
+
+        body {
+            background-color: var(--negro-fondo);
+            color: var(--texto-blanco);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--rosado-principal);
+            box-shadow: 0 4px 15px rgba(255, 45, 117, 0.3);
+        }
+
+        h1 {
+            color: var(--rosado-principal);
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 10px rgba(255, 45, 117, 0.5);
+        }
+
+        .container {
+            margin-top: 3rem;
+            width: 90%;
+            max-width: 800px;
+            background-color: var(--negro-tarjeta);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--texto-blanco);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .grid-ciudades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .ciudad-card {
+            background: linear-gradient(145deg, #1a1a1a, #252525);
+            border: 1px solid var(--rosado-principal);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--rosado-principal);
+        }
+
+        .ciudad-card:hover {
+            background-color: var(--rosado-principal);
+            color: var(--negro-fondo);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 45, 117, 0.4);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Scortchiloe</h1>
+    </header>
+
+    <div class="container">
+        <h2>Seleccione una ubicación</h2>
+       
+        <div class="grid-ciudades">
+            <div class="ciudad-card">Castro</div>
+            <div class="ciudad-card">Chonchi</div>
+            <div class="ciudad-card">Dalcahue</div>
+            <div class="ciudad-card">Quellón</div>
+            <div class="ciudad-card">Ancud</div>
+            <div class="ciudad-card">Puerto Montt</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Scortchiloe - Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .letrero-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .letrero-adultos {
+            background-color: #fff0f5; /* Rosa muy claro de fondo */
+            color: #d81b60;           /* Rosa oscuro/magenta para el texto */
+            border: 3px solid #ff69b4; /* Borde rosa vibrante */
+            padding: 10px 25px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 4px 4px 0px #ff69b4; /* Sombra sólida estilo retro */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* El círculo del número 18 */
+        .icono-18 {
+            background-color: #ff69b4;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border: 2px solid #d81b60;
+        }
+
+        .texto-letrero {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letrero-container">
+        <div class="letrero-adultos">
+            <div class="icono-18">18+</div>
+            <div class="texto-letrero">Contenido exclusivo para mayores de edad</div>
+        </div>
+    </div>
+
+</body>
+</html>
